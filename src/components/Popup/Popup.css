@@ -1,0 +1,138 @@
+.checkout-popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.popup-container {
+  width: 650px;
+  height: 100vh;
+  padding: 16px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0 8px;
+  transition: all 0.2s ease-in-out;
+  overflow-y: auto;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.popup-close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  min-height: 120px;
+}
+
+.popup-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.popup-item-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.popup-item-info span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.quantity-button {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-button,
+.quantity-button.decrease {
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.quantity-button.decrease {
+  background-color: red;
+}
+
+.delete-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.quantity-text {
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.popup-total {
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.popup-order-button-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-decrease {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-increase {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

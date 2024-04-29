@@ -1,0 +1,14 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-image {
+  max-width: 300px;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
